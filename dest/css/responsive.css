@@ -16,7 +16,9 @@
   .ir-list a:hover .date { color: #b32521; }
   .ir-book .picbox:hover { color: #b32521; }
   .ib-list a:hover { color: #b32521; }
-  .ib-list a:hover .pic2:after { border-color: #b32521; } }
+  .ib-list a:hover .pic2:after { border-color: #b32521; }
+  .footer a:hover { color: #b32521; }
+  .share a:hover { background-position: center bottom; } }
 @media screen and (max-width: 1600px) { .container { min-height: 800px; } }
 @media screen and (max-width: 1366px) { .container { min-height: 600px; } }
 @media screen and (max-width: 1024px) { .vwrap .videobox { width: 700px; margin-left: -350px; }
