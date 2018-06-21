@@ -200,17 +200,17 @@ html.open{overflow: hidden; }
 /* menuBtn <div class="menu-handler"><span class="burger burger-1 mtrans"></span><span class="burger burger-2 mtrans"></span><span class="burger burger-3 mtrans"></span></div> */
 .mtrans, .mtrans:hover { -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s; transition:all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s; -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s; }
 .mtrans-fast, .mtrans-fast:hover { -webkit-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out; -ms-transition: all 200ms ease-in-out; }
-.menu-handler { display: none; background: none; overflow: hidden; width: 60px; height: 60px; cursor: pointer; position: fixed; right:0; top: 0px; transition: all 0.3s cubic-bezier(0.445, 0.145, 0.355, 1); -webkit-transition: all 0.3s cubic-bezier(0.445, 0.145, 0.355, 1); -moz-transition: all 0.3s cubic-bezier(0.445, 0.145, 0.355, 1); z-index:1012; }
-.menu-handler .burger { width: 42px; height: 4px; background: #201b18; display: block; position: absolute; z-index: 5; top: 21px; left: 50%; margin: 0px 0px 0px -21px; transform-origin: center; -webkit-transform-origin: center; -moz-transform-origin: center; -o-transform-origin: center; -ms-transform-origin: center; }
+.menu-handler { display: none; background: #c82126; overflow: hidden; width: 60px; height: 60px; cursor: pointer; position: fixed; right:0; top: 0px; z-index:1012; }
+.menu-handler .burger { width: 32px; height: 4px; background: #fff; display: block; position: absolute; z-index: 5; top: 18px; left: 50%; margin: 0px 0px 0px -16px; transform-origin: center; -webkit-transform-origin: center; -moz-transform-origin: center; -o-transform-origin: center; -ms-transform-origin: center; }
 .menu-handler .burger-2 { top: 28px; }
-.menu-handler .burger-3 { top: 35px; }
+.menu-handler .burger-3 { top: 38px; }
 .menu-handler.active .burger-1 { top: 30px; -webkit-transform: rotate(225deg); transform: rotate(225deg); }
 .menu-handler.active .burger-2 { -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); filter: alpha(opacity=0); opacity: 0; -moz-opacity: 0; -khtml-opacity: 0; -webkit-opacity: 0; left: -100%; }
 .menu-handler.active .burger-3 { top: 30px; -webkit-transform: rotate(-225deg); transform: rotate(-225deg); } 
 /* menuBtn end */
 
 /* menuBtn：<div class="menuBtn"><div class="mb"><span class="ml ml-1"></span><span class="ml ml-2"></span></div></div> */
-.menuBtn { position: absolute; top: 0; left: 0; width: 60px; height: 60px; display: none; }
+.menuBtn { position: absolute; top: 0; right: 0; z-index: 99; width: 60px; height: 60px; display: none; background: #c82126; }
 .menuBtn .mb { position: relative; height: 100%; -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
 .menuBtn .ml { display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: -webkit-transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99); transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
 .menuBtn .ml:before { content: ""; position: absolute; top: 29px; left: 50%; margin-left: -9px; width: 18px; height: 2px; background: #fff; }
@@ -526,12 +526,15 @@ html.open{overflow: hidden; }
 
 .h-link { display: block; width: 80px; height: 22px; border: 1px solid #b32521; color: #b32521; text-align: center; font-size: 12px; line-height: 22px; overflow: hidden; }
 
-.menuBox { position: fixed; width: 100%; padding: 0 5%; -webkit-box-sizing: border-box; box-sizing: border-box; top: -100%; right: 0; height: 100%; background: #fff; z-index: 1010; overflow: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; display: none; }
-.menuBox a { color: #000; }
+.menuBlack { position: fixed; z-index: 1009; display: none; }
 
-.navMobile a { display: block; position: relative; line-height: 1.4; }
-.navMobile p a { padding: 15px 0; font-size: 18px; }
-.navMobile .mtnav { display: none; padding: 12px 0; }
+.menuBox { position: fixed; width: 300px; -webkit-box-sizing: border-box; box-sizing: border-box; top: 0; right: -300px; height: 100%; background: #f2f2f2; z-index: 1010; overflow: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; display: none; }
+.menuBox a { color: #666; }
+
+.navMobile a { display: block; position: relative; line-height: 24px; }
+.navMobile p a { border-bottom: 1px solid #ccc; padding: 18px 25px; font-size: 18px; }
+.navMobile p a.act { background: #b32521; color: #fff; }
+.navMobile .mtnav { display: none; padding: 12px 35px; background: #fff; }
 .navMobile .mtnav a { padding: 12px 0; font-size: 16px; }
 
 .banner .txts { position: absolute; left: 0; right: 0; top: 38%; color: #fff; min-height: 84px; }
@@ -575,7 +578,7 @@ html.open{overflow: hidden; }
 .ix-news .in-nav { margin-bottom: 35px; }
 .ix-news .in-sp { border-bottom: 1px solid #ccc; padding-bottom: 30px; margin-bottom: 15px; }
 
-.vi-btn { cursor: pointer; }
+.v-btn { cursor: pointer; }
 
 .ix-video-box { float: right; width: 33.33%; }
 
@@ -598,6 +601,7 @@ html.open{overflow: hidden; }
 .ix-pro li:nth-child(2) { width: 60%; }
 .ix-pro a { color: #fff; }
 .ix-pro .ip-a { display: block; height: 100%; background-repeat: no-repeat; background-position: center center; }
+.ix-pro .pic { display: none; }
 .ix-pro .ip-nav-box, .ix-pro .txts { position: absolute; left: 85px; right: 85px; bottom: 38%; overflow: hidden; }
 .ix-pro .txts { margin-bottom: 30px; }
 .ix-pro .ico { display: block; width: 200px; height: 60px; background-position: left center; }
@@ -612,6 +616,7 @@ html.open{overflow: hidden; }
 .ir-arrow .slick-prev { left: 0; }
 .ir-arrow .slick-next { right: 0; background-position: right 0; }
 
+.ix-par { margin-left: -25px; }
 .ix-par .ma { margin-left: 25px; }
 .ix-par .bodr { border: 1px solid #ccc; }
 
