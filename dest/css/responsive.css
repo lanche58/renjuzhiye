@@ -19,10 +19,28 @@
   .ib-list a:hover .pic2:after { border-color: #b32521; }
   .footer a:hover { color: #b32521; }
   .share a:hover { background-position: center bottom; }
-  .pnav a:hover { background: #b32521; color: #fff; } 
+  .pnav a:hover { background: #b32521; color: #fff; }
+  .bus-list li:hover:after{ width: 100%; }
+  .bus-list li:hover .ch{ color: #b32521; }
+  .bus-list li:hover{ background: #f9f9f9; }
+  .bus-list li:nth-child(2n-1) .pic{ float: right; } 
+  .ab-nav a:hover:before{ width: 100%; left: 0; right: auto; }
+  .ab-nav a:hover{ color: #b32521; }
+}
+@media screen and (min-width: 1025px) {
+  .cur-list li:before{ content: ""; position: absolute; top: auto; bottom: 0; left: 0; width: 100%; height: 0; background: #b32521; -webkit-transition: 600ms; transition: 600ms; }
+  .cur-list li:hover:before{ height: 100%; top: 0; bottom: auto; }
+  .cur-list li:hover{ padding-top: 115px; }
+  .cur-list li:hover .txx, .cur-list li:hover .line{ opacity: 1; visibility: visible; }
+  .cur-list .txx, .cur-list .line{ opacity: 0; visibility: hidden; -webkit-transition: 400ms; transition: 400ms; }
+
 }
 @media screen and (min-width: 861px) {
 .pnav a.act {background: #b32521; color: #fff; }
+}
+@media screen and (max-width: 1700px) {
+.bus-list .bus-ti {margin-bottom: 50px; }
+.bus-list .txts{ padding-top: 70px; }
 }
 @media screen and (max-width: 1600px) { .container { min-height: 800px; }
   .banner .ch { font-size: 50px; }
@@ -31,12 +49,22 @@
   .ix-pro .ip-nav-box, .ix-pro .txts { bottom: 32%; }
   .ab1 {padding: 110px 0 170px 0; }
   .ab-intro {padding: 215px 0 190px 0; }
-
-
+  .ab2{ padding: 120px 0 160px 0; }
+  .bus-list .bus-ti {margin-bottom: 40px; }
+  .bus-list .txts {padding-top: 50px; }
+  
 
 
 
 }
+
+@media screen and (max-width: 1440px) {
+  .bus-list .txts {font-size: 14px; }
+  .bus-list .bus-ti .ch {font-size: 24px;}
+  .bus-list .bus-ti {margin-bottom: 30px; }
+
+}
+
 @media screen and (max-width: 1366px) { .container { min-height: 600px; }
   .banner .ch { font-size: 46px; }
   .banner .ti { font-size: 16px; }
@@ -66,12 +94,33 @@
   .ib-list .nowti { margin-top: 8px; font-size: 12px; }
   .f-nav a + a { margin-left: 25px; }
   .ab1 {padding: 80px 0 140px 0; }
+  .ab2{ padding: 100px 0 140px 0; }
   .ab-intro {padding: 195px 0 170px 0; }
+
 
 }
 @media screen and (max-width: 1281px) { .ix-pro .txts { margin-bottom: 60px; }
   .ip-nav { padding-bottom: 20px; }
-  .ix-pro .ip-nav-box, .ix-pro .txts { bottom: 22%; } }
+  .ix-pro .ip-nav-box, .ix-pro .txts { bottom: 22%; } 
+  .bus-list .txts {padding-top: 40px; }
+  .bus-list .bus-ti .ch {font-size: 20px; }
+  .bus-list .bus-ti .en{ font-size: 12px; }
+  .bus-list .bus-ti {margin-bottom: 25px; }
+}
+@media screen and (max-width: 1201px) {
+  .bus-list{ width: 960px; max-width: 90%; margin: 0 auto; }
+  .bus-list li:nth-child(2n-1) .pic{ float: none; }
+  .bus-list .pic, .bus-list .txts{ float: none; width: 100%; }
+  .bus-list .txts {padding: 80px 5%; font-size: 15px; }
+  .bus-list .bus-ti .ch{ font-size: 24px; }
+  .bus-list .bus-ti .en{ font-size: 14px; }
+  .bus-list .bus-ti {margin-bottom: 70px; }
+  .bus-list li{ background: #f9f9f9; }
+  .bus-list li + li{ margin-top: 60px; }
+  .ab3{ padding: 80px 0 140px 0; }
+
+}
+
 @media screen and (max-width: 1153px) { .ix-pro .ip-nav-box, .ix-pro .txts { left: 45px; right: 45px; } }
 @media screen and (max-width: 1024px) { .vwrap .videobox { width: 700px; margin-left: -350px; }
   .pw { width: 90%; }
@@ -118,6 +167,8 @@
   .ab-num li {margin: 0 30px; }
   .ab-num .num i {font-size: 44px; }
   .ab-intro {padding: 175px 0 150px 0; }
+  .cur-list li:before{ display: none; }
+  .cur-list li{ padding-top: 115px; }
 
 }
 @media screen and (max-width: 861px) { .vwrap .videobox { width: 100%; left: 0; margin-left: 0; }
@@ -148,6 +199,8 @@
   .ab-num li{ width: 50%; margin: 0; float: left; margin-bottom: 30px; }
   .ab-num .num i {font-size: 50px; }
   .ab1 > .rel {padding-bottom: 100px; }
+  .cur-list li{ width: 50%; }
+  .cur-list li {padding-top: 75px; height: 320px; }
 
 
 }
@@ -177,6 +230,9 @@
   .banner .ch { font-size: 30px; } 
   .ab-ti {font-size: 24px; }
   .ab-intro .txx {font-size: 20px; }
+  .bus-list .bus-ti {margin-bottom: 50px; }
+  .bus-list .txts {padding: 60px 5%; }
+
 }
 @media screen and (max-width: 481px) { .vwrap .videobox { height: 300px; margin-top: -150px; }
   .container { min-height: 400px; }
@@ -200,12 +256,19 @@
   .ab-intro .txx {font-size: 18px; }
   .ab-intro {padding: 95px 0; }
   .ab1 .ab-intro {margin-bottom: 50px; }
-  .ab1 {padding: 50px 0; }
-
+  .ab3, .ab2, .ab1 {padding: 50px 0; }
+  .bus-list .bus-ti .ch {font-size: 22px; }
+  .bus-list .bus-ti {margin-bottom: 30px; }
+  .bus-list .txts {padding: 45px 5%; }
+  .bus-list li + li {margin-top: 40px; }
+  .ab4 .ab-ti {margin-top: 50px; }
+  .ab4 .ab-tx {margin-top: 15px; }
+  .ab4 .cur-list {margin-top: 35px; }
+  .cur-list li{ width: 100%; float: none; border-left: none; height: auto; padding-top: 55px; padding-bottom: 55px; }
 
 }
 @media screen and (max-width: 321px) { 
   .vwrap .videobox { height: 260px; margin-top: -130px; }
   .menuBox {width: 260px; right: -260px; }
-  
+
 }
