@@ -112,11 +112,10 @@
             <div class="pic2"><img src="img/banner.jpg" alt=""></div>
             <div class="txts">
                 <div class="pw rel">
-                    <p class="ti am am-fiu">我们的理念</p>
+                    <p class="ti am am-fiu">RENJU Real estate</p>
                     <p class="ch am am-fiu">匠心筑梦 · 精心为居</p>
-                    <p class="en am am-fiu">Shoulder the glorious mission of urban construction, 
-improve the quality of life</p>
-                    <div class="more am am-fil"><span class="ixmore">more ></span></div>
+                    <!-- <div class="line"><i></i></div> -->
+                    <div class="more am am-fiu"><span class="ixmore">more ></span></div>
                 </div>
             </div> 
         </a></div>
@@ -124,11 +123,10 @@ improve the quality of life</p>
             <div class="pic2"><img src="img/banner1.jpg" alt=""></div>
             <div class="txts">
                 <div class="pw rel">
-                    <p class="ti am am-fiu">我们的理念</p>
+                    <p class="ti am am-fiu">RENJU Real estate</p>
                     <p class="ch am am-fiu">匠心筑梦 · 精心为居</p>
-                    <p class="en am am-fiu">Shoulder the glorious mission of urban construction, 
-improve the quality of life</p>
-                    <div class="more am am-fil"><span class="ixmore">more ></span></div>
+                    <!-- <div class="line"><i></i></div> -->
+                    <div class="more am am-fiu"><span class="ixmore">more ></span></div>
                 </div>
             </div>   
         </div>
@@ -136,11 +134,10 @@ improve the quality of life</p>
             <div class="pic2"><img src="img/banner2.jpg" alt=""></div>
             <div class="txts">
                 <div class="pw rel">
-                    <p class="ti am am-fiu">我们的理念</p>
+                    <p class="ti am am-fiu">RENJU Real estate</p>
                     <p class="ch am am-fiu">匠心筑梦 · 精心为居</p>
-                    <p class="en am am-fiu">Shoulder the glorious mission of urban construction, 
-improve the quality of life</p>
-                    <div class="more am am-fil"><span class="ixmore">more ></span></div>
+                    <!-- <div class="line"><i></i></div> -->
+                    <div class="more am am-fiu"><span class="ixmore">more ></span></div>
                 </div>
             </div>   
         </div>
@@ -236,11 +233,11 @@ improve the quality of life</p>
                         <span class="cover"></span>
                         <span class="aico"></span>
                     </div>
-                    <div class="txts bosi">
-                        <p class="nowti">公司简介</p>
-                        <p class="tx">成都兴城人居地产投资集团有限公司是成都兴城投资集团有限公司全资子企业，主要负责兴城...</p>
-                    </div>
                 </div>
+                <a href="#" class="txts bosi">
+                    <p class="nowti">公司简介</p>
+                    <p class="tx">成都兴城人居地产投资集团有限公司是成都兴城投资集团有限公司全资子企业，主要负责兴城...</p>
+                </a>
             </div>
         </div>
     </div>
@@ -479,6 +476,7 @@ improve the quality of life</p>
         $('.banner').on('init', function(event, slick, currentSlide, nextSlide) {
             $('.banner .item').first().addClass('active');
         });
+        $('.banner .line i').css({width:0}).stop().animate({width:100+'%'},4800,'linear');
         var bannerSlick = $('.banner').slick({
             speed: 1000,
             arrows: true,
@@ -490,6 +488,7 @@ improve the quality of life</p>
         }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
             $('.banner .item').removeClass('active');
             $('.banner .item').eq(nextSlide).addClass('active');
+            $('.banner .line i').css({width:0}).stop().animate({width:100+'%'},5800,'linear');
         });
         $('.banner .txts').each(function(i, e) {
             $(this).find('.am').each(function(i, e) {
