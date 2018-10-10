@@ -298,6 +298,7 @@
   .pbanner .ch { font-size: 40px; }
   .pbanner .en { margin-bottom: 5px; }
   .banner .line { display: none; }
+  .ix-pro .txts { margin-bottom: 0; bottom: 50%; -webkit-transform: translateY(50%); transform: translateY(50%); }
 }
 @media screen and (max-width:861px) {
   .vwrap .videobox { width: 100%; left: 0; margin-left: 0; }
@@ -312,8 +313,7 @@
   .banner .ti { font-size: 14px; }
   .in-sp .nowti, .in-sp .tx { width: auto; }
   .ix-video { width: 302px; }
-  .ix-pro .ip-nav-box, .ix-pro .txts { bottom: 20%; }
-  .ix-pro .txts { margin-bottom: 90px; }
+  .ix-pro .ip-nav-box{ bottom: 20%; }
   .ir-build .ir-imgs { width: 308px; }
   .ir-list a, .ir-list .nowti { line-height: 32px; }
   .ir-txts .ir-title { margin-bottom: 15px; }
@@ -378,7 +378,6 @@
   .in-nav li:before { display: none; }
   .ix-video{ width: 100%; float: none; }
   .ip-nav-box { display: none; }
-  .ix-pro .txts { margin-bottom: 0; bottom: 50%; -webkit-transform: translateY(50%); transform: translateY(50%); }
   .ir-item, .ir-build .ir-imgs { float: none; width: 100%; }
   .ir-book, .ir-txts { height: auto; padding-bottom: 25px; }
   .ir-list a, .ir-list .nowti { line-height: 38px; }

@@ -537,7 +537,7 @@ html.open { overflow: hidden; }
 .ix-pro .pic { display: none; }
 .ix-pro .ip-nav-box, .ix-pro .txts { position: absolute; left: 85px; right: 85px; bottom: 38%; overflow: hidden; }
 .ix-pro .txts { margin-bottom: 30px; }
-.ix-pro .ico { display: block; width: 200px; height: 60px; background-position: left bottom; }
+.ix-pro .ico { display: block; width: 200px; height: 60px; background-position: left center; }
 .ix-pro .ch { font-size: 24px; width: 200px; margin-top: 5px; }
 .ix-pro .en { font-size: 16px; margin-top: 15px;        /* -webkit-transform: translateX(50%); */        /* transform: translateX(50%); */
 
