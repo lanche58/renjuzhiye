@@ -41,7 +41,7 @@ html.open { overflow: hidden; }
 .nowti { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 1.4; }
 .now { white-space: nowrap; overflow: hidden; line-height: 1.4; }
 .freeTx { overflow: hidden; position: relative; text-align: justify; }
-.freeTx img { max-width: 100%; vertical-align: bottom; width: auto !important; height: auto !important; }
+.freeTx img { max-width: 100%; vertical-align: bottom; height: auto !important; }
 .freeTx table { display: inline-block; vertical-align: top; max-width: 100% !important; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .tx { overflow: hidden; text-align: justify; line-height: 24px !important; }
 .ti, .name, .ch { line-height: 1.4; }
@@ -1035,3 +1035,5 @@ margin-bottom: 8px; }
 .hs-b { padding-top: 50px; }
 .hs-years .slick-arrow { -webkit-transform: scale(0.7); transform: scale(0.7); }
 }
+.nd-box .ab-ti{ font-weight: normal; }
+.nd-box .freeTx p, .nd-box .freeTx * { font-size: 20px !important; font-family: 仿宋 !important; }
