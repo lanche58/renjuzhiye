@@ -599,7 +599,6 @@ html.open { overflow: hidden; }
 .footer .share { margin-top: 45px; float: right; }
 .f-nav a { font-size: 15px; }
 .f-nav a + a { margin-left: 35px; }
-.f-cop a { display: block; }
 .pbanner { position: relative; overflow: hidden; }
 .pbanner .cover { background: rgba(0, 0, 0, 0.2);        /* display: none; */ }
 .pbanner .txts { position: absolute; left: 0; right: 0; padding: 0 5%; top: 35%; color: #fff;        /* font-size: 30px; */        /* text-shadow: 1px 1px 3px rgba(0,0,0,.3); */ }
@@ -1036,4 +1035,5 @@ margin-bottom: 8px; }
 .hs-years .slick-arrow { -webkit-transform: scale(0.7); transform: scale(0.7); }
 }
 .nd-box .ab-ti{ font-weight: normal; }
-.nd-box .freeTx p, .nd-box .freeTx * { font-size: 20px !important; font-family: 仿宋 !important; }
+.nd-box .freeTx p, .nd-box .freeTx * { font-size: 20px !important; font-family: 宋体 !important; }
+.ab-see{ float: right; line-height: 34px; margin-right: 40px; }

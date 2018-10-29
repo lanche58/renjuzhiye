@@ -299,6 +299,8 @@
   .pbanner .en { margin-bottom: 5px; }
   .banner .line { display: none; }
   .ix-pro .txts { margin-bottom: 0; bottom: 50%; -webkit-transform: translateY(50%); transform: translateY(50%); }
+  .pro3 .ab-ti{ float: none; width: 100% !important; }
+  .ab-see{ display: block; float: none; line-height: 1.8; font-size: 12px;  margin: 3px 0 0 0; }
 }
 @media screen and (max-width:861px) {
   .vwrap .videobox { width: 100%; left: 0; margin-left: 0; }
@@ -370,6 +372,7 @@
   .book-list .pic { display: none; }
   .banner-pro a{ color: #fff;  }
   .banner-pro .ico{ background-position: center bottom; }
+  
 }
 @media screen and (max-width:641px) {
   .vwrap .videobox { height: 350px; margin-top: -175px; }
@@ -568,6 +571,7 @@
   .book-list .btn { margin-top: 20px; }
   .ab6 .book-list { margin-bottom: 15px; }
   .pbanner .en { font-size: 12px; margin-bottom: 3px; }
+  .pro3 .ab-ti span{ display: block; margin: 5px 0 0; font-size: 12px; }
 }
 @media screen and (max-width:321px) {
   .vwrap .videobox { height: 260px; margin-top: -130px; }
